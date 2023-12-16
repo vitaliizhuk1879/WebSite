@@ -98,7 +98,7 @@ a:-webkit-any-link {
 
 .header__buttons {
     width: 100%;
-    max-width: 200px;
+    max-width: 425px;
 
     display: flex;
     justify-content: space-between;
