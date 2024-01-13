@@ -39,8 +39,14 @@ a:-webkit-any-link {
 
 /* Header */
 .header {
+    width: 100%;
+
     padding: 15px 0;
     border-bottom: 1px solid #e6e6e6;
+    background-color: #fff;
+
+    position: fixed;
+    z-index: 1000;
 }
 
 .header__container {
@@ -98,15 +104,107 @@ a:-webkit-any-link {
 
 .header__buttons {
     width: 100%;
-    max-width: 425px;
+    max-width: 400px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.search__container {
+    display: flex;
+
+    position: relative;
+}
+
+.search {
+    width: 230px;
+    height: 30px;
+
+    padding: 5px 30px 5px 17px;
+
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.clean__btn {
+    width: 27px;
+    height: 30px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity .1s linear;
+}
+
+.clean__search1 {
+    width: 10px;
+    height: 15px;
+
+    position: relative;
+    top: 5.614px;
+    left: 1px;
+    z-index: 1001;
+
+    border-right: 2.5px solid #A9A9A9;
+
+    transform: rotate(45deg);
+
+    transition: border-right-color .1s linear;
+}
+
+.clean__search2 {
+    width: 10px;
+    height: 15px;
+
+    position: relative;
+    top: -4.46px;
+    left: 1px;
+    z-index: 1001;
+
+    border-right: 2.5px solid #A9A9A9;
+
+    transform: rotate(-45deg);
+
+    transition: border-right-color .1s linear;
+}
+
+.clean__search--black {
+    border-right-color: black;
+}
+
+.too__full {
+    position: absolute;
+    bottom: -18px;
+    left: 18px;
+    z-index: 1000;
+
+    font-family: "Heebo";
+    color: red;
+    font-size: 12px;
+    font-weight: 400;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity .1s linear;
+}
+
+.showing {
+    opacity: 1;
+    visibility: visible;
+}
+
 .search__button {
-    margin-top: 6px;
+    margin-top: 4px;
+    margin-right: 10px;
 
     border: none;
     background-color: rgba(0, 0, 0, 0);
@@ -119,11 +217,15 @@ a:-webkit-any-link {
     width: 150px;
     height: 30px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     font-family: "Heebo";
     font-weight: 500;
     color: #fff;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
     
     background-color: #23374d;
     border: none;
@@ -150,6 +252,10 @@ a:-webkit-any-link {
 }
 
 /* Article */
+.articles {
+    padding-top: 100px;
+}
+
 .article {
     margin-bottom: 50px;
 }
@@ -316,15 +422,25 @@ a:-webkit-any-link {
 }
 
 .recent__posts {
-    display: none;
+    height: 1050px;
+    opacity: 1;
+    visibility: visible;
+
+    transition: height 0.5s ease, opacity 2s linear;
 }
 
 .popular__posts {
-    display: none;
+    height: 1050px;
+    opacity: 1;
+    visibility: visible;
+
+    transition: all 0.5s ease;
 }
 
-.active {
-    display: block;
+.inactive {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .post__item {
@@ -451,11 +567,17 @@ a:-webkit-any-link {
     display: flex;
     justify-content: space-between;
 
-    display: none;
+    height: 1050px;
+    opacity: 1;
+    visibility: visible;
+
+    transition: all 0.5s ease;
 }
 
-.active__2 {
-    display: flex;
+.inactive__2 {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .instagram img {
@@ -621,4 +743,12 @@ a:-webkit-any-link {
     left: 26px;
 
     width: 28px;
+}
+
+
+/* Colour of element */
+.color__element {
+    font-weight: normal;
+    background-color: yellow;
+    border-radius: 5px;
 }

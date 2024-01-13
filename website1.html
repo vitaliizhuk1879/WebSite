@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk-UA">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<body id="body">
     <!-- Header -->
     <div class="header">
 
@@ -25,15 +25,25 @@
                             src="/assets/images/social__media/3.png" alt=""></a>
                 </div>
 
-                <h1 class="header__title">Your logo</h1>
+                <div class="header__title">Your logo</div>
 
                 <div class="header__buttons">
-                    <button class="search__button">
-                        <img src="/assets/images/search.png" alt="">
-                    </button>
+
+                    <div class="search__container">
+                        <input id="search" class="search" type="text" placeholder="Search on site" autocomplete="off">
+
+                        <div id="clean__btn" class="clean__btn">
+                            <div class="clean__search1"></div>
+                            <div class="clean__search2"></div>
+                        </div>
+                        
+                        <div id="too__full" class="too__full">Too many characters. You need &#60;100 </div>
+                    </div>
+
                     <button class="subsc__button">
-                        <h3>subscribe</h3>
+                        subscribe
                     </button>
+
                 </div>
             </div>
 
@@ -56,13 +66,7 @@
                     <img src="assets/images/article__images/1.jpg" alt="">
 
                     <p class="article__text">
-                        Burglars have stolen three diamond jewellery sets from one of Europe's largest treasure
-                        collections - the Dresden Green Vault in eastern Germany.
-                        <br>The historic sets consist of 37 parts each, and there are fears the thieves may try to break
-                        them up.
-                        Officials are still trying to establish exactly how much was stolen in the break-in early on
-                        Monday. Saxony's ruler, Augustus the Strong, created the collection in 1723 in what is one of
-                        the world's oldest museums.
+                        Burglars have stolen three diamond jewellery sets from one of Europe's largest treasure collections - the Dresden Green Vault in eastern Germany. The historic sets consist of 37 parts each, and there are fears the thieves may try to break them up. Officials are still trying to establish exactly how much was stolen in the break-in early on Monday. Saxony's ruler, Augustus the Strong, created the collection in 1723 in what is one of the world's oldest museums.
                     </p>
 
                     <div class="article__foot">
@@ -91,12 +95,7 @@
                     <img src="assets/images/article__images/2.jpg" alt="">
 
                     <p class="article__text">
-                        There's strong disagreement among Democratic contenders for the US presidency about legalising
-                        cannabis and it's been a flashpoint in their televised debates. Joe Biden, currently the leading
-                        contender in the race, won't be drawn either way. He wants more evidence about whether using it
-                        could act as a "gateway" to the use of harder drugs before it's legalised throughout the US.
-                        "Before I legalise it nationally," said Biden, "I want to make sure we know a lot more about the
-                        science behind it."
+                        There's strong disagreement among Democratic contenders for the US presidency about legalising cannabis and it's been a flashpoint in their televised debates. Joe Biden, currently the leading contender in the race, won't be drawn either way. He wants more evidence about whether using it could act as a "gateway" to the use of harder drugs before it's legalised throughout the US. "Before I legalise it nationally," said Biden, "I want to make sure we know a lot more about the science behind it."
                     </p>
 
                     <div class="article__foot">
@@ -125,11 +124,7 @@
                     <img src="assets/images/article__images/3.jpg" alt="">
 
                     <p class="article__text">
-                        Making spacecraft is not a job in which you can afford to be slapdash. At Lockheed Martin, for
-                        example, it used to take a technician two painstaking days to measure 309 locations for certain
-                        fasteners on a particular curved panel.
-                        But according to Shelley Peterson, the aerospace company's head of emerging technologies, the
-                        same job now takes little more than two hours.
+                        Making spacecraft is not a job in which you can afford to be slapdash. At Lockheed Martin, for example, it used to take a technician two painstaking days to measure 309 locations for certain fasteners on a particular curved panel. But according to Shelley Peterson, the aerospace company's head of emerging technologies, the same job now takes little more than two hours.
                     </p>
 
                     <div class="article__foot">
@@ -158,11 +153,7 @@
                     <img src="assets/images/article__images/4.jpg" alt="">
 
                     <p class="article__text">
-                        Milk plays a crucial role in the life of all mammals, right from birth. But some say that
-                        drinking another mammal’s milk is unnecessary, unnatural, even unhealthy.
-                        As the only animal to drink the milk of another species, humans have an unusual relationship
-                        with the white stuff. Most other animals are weaned off milk in infancy, once we start to need
-                        more complex foods. So why do humans keep drinking it?
+                        Milk plays a crucial role in the life of all mammals, right from birth. But some say that drinking another mammal’s milk is unnecessary, unnatural, even unhealthy. As the only animal to drink the milk of another species, humans have an unusual relationship with the white stuff. Most other animals are weaned off milk in infancy, once we start to need more complex foods. So why do humans keep drinking it?
                     </p>
 
                     <div class="article__foot">
@@ -191,13 +182,7 @@
                     <img src="assets/images/article__images/5.jpg" alt="">
 
                     <p class="article__text">
-                        We can now amplify the restorative benefits of sleep. Could this help us cope with later nights
-                        and early mornings?
-                        We often wear our sleeplessness as a badge of pride – a measure of our impossibly hectic
-                        schedules.
-                        Thomas Edison, Margaret Thatcher, Martha Stewart and Donald Trump have all famously claimed to
-                        get by on just four or five hours’ sleep a night – much less than the seven-to-nine hours
-                        recommended to most adults.
+                        We can now amplify the restorative benefits of sleep. Could this help us cope with later nights and early mornings? We often wear our sleeplessness as a badge of pride – a measure of our impossibly hectic schedules. Thomas Edison, Margaret Thatcher, Martha Stewart and Donald Trump have all famously claimed to get by on just four or five hours’ sleep a night – much less than the seven-to-nine hours recommended to most adults.
                     </p>
 
                     <div class="article__foot">
@@ -227,7 +212,7 @@
                     <button id="recent__btn" class="recent__btn">
                         Recent posts
                     </button>
-                    <div id="recent__posts" class="recent__posts active">
+                    <div id="recent__posts" class="recent__posts">
                         <div class="post__item">
                             <img src="assets/images/post__img/1.png" alt="">
 
@@ -267,7 +252,7 @@
                     <button id="popular__btn" class="popular__btn">
                         Popular posts
                     </button>
-                    <div id="popular__posts" class="popular__posts active">
+                    <div id="popular__posts" class="popular__posts">
 
                         <div class="post__item">
                             <img src="assets/images/post__img/1.png" alt="">
@@ -312,7 +297,7 @@
                     Instagram
                 </button>
 
-                <div id="instagram" class="instagram active__2">
+                <div id="instagram" class="instagram">
                     <div class="inst__col">
                         <img src="assets/images/instagram/1.jpg" alt="">
                         <img src="assets/images/instagram/3.jpg" alt="">
@@ -397,6 +382,7 @@
         <div class="div__3"></div>
     </div>
 
+    <script src="./assets/js/search.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>
 
